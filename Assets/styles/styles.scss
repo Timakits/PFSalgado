@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
+
+//fonts
+$font1: 'Noto Sans', sans-serif;
+$font2: 'Bebas Neue', cursive;
+$font3: 'Arimo', sans-serif;
+
+
+//paleta de colores
+
+$color1: #FA9600;
+$color2: #E06B00;
+$color3: #F7570C;
+$color4: #ED2B0C;
+$color5: #000000;
+$color6: #ffffff;
+
+//sizes
+
+$size-sm: 20px;
+$size-md: 30px;
+$size-lg: 40px;
+$size-xl: 50px;
+$size-xxl: 100px;
+$size-100: 100%;
+
+body {
+    background-color: #181A1B;
+}
+
+header {
+    height: 20vh;
+    max-width: 100%;
+    background-color: $color1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 10px;
+
+    .title {
+        width: $size-100;
+
+        .home {
+            font-family: $font1;
+            font-size: $size-lg;
+            color: $color6;
+            text-shadow: 0 0 10px black;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        width: $size-100;
+        height: $size-lg;
+
+        .navbarinput {
+            height: $size-md;
+            width: $size-100;
+        }
+
+        .lupa {
+            height: $size-md;
+        }
+    }
+
+    .userlogo {
+        height: $size-md ;
+        width: $size-md;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav {
+        padding: $size-sm;
+        width: $size-100;
+
+        a {
+            text-decoration: none;
+            color: #000000;
+            font-family: $font2;
+            text-align: center;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+    }
+
+}
+
+.footer {
+    background-color: $color2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: $size-md;
+    font-family: $font3;
+    padding: 20px;
+
+    a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+    }
+
+    a:hover {
+        color: rgb(0, 74, 139);
+    }
+
+    p {
+        font-size: $size-sm;
+        color: white;
+    }
+}
+
+.barradiv {
+    height: 10px;
+    background-color: $color1;
+}
+
+
+//Index
+
+.catalogocont {
+    overflow: auto;
+    height: 40vh;
+    display: inline-block;
+
+    .reseña {
+        display: flex;
+        padding: 5px;
+        align-items: center;
+        filter: grayscale(100%);
+
+        .reseña:hover {
+            filter: grayscale(0%);
+        }
+
+        p {
+            float: right;
+            font-size: 15px;
+            padding: 5px;
+            text-align: center;
+            color: white;
+        }
+    }
+
+    .imgreseña {
+        height: 120px;
+        width: 120px;
+    }
+}
+
+.video {
+    width: $size-100;
+}
+
+.ubi {
+    width: $size-100;
+    height: 120px;
+}
+
+//Index
+
+
+//nosotros
+
+main {
+    height: 50vh;
+    width: $size-100;
+    background-image: url(../nostrospng.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $size-md;
+    font-family: $font2;
+    color: $color2;
+    text-shadow: 0 0 5px black;
+
+}
+
+.usgeneral {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    font-size: $size-sm;
+    font-family: $font3;
+    text-align: center;
+    padding: 10px;
+}
+
+.mision {
+    text-align: center;
+    font-size: $size-xxl;
+    font-family: $font2;
+    color: $color4;
+    background-color: $color2;
+    text-shadow: 0 0 5px black;
+}
+
+
+.misioncards {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 2px solid $color1;
+
+
+    width: $size-100;
+
+    .cardus {
+        border: 2px solid $color1;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        p {
+            padding: 10px;
+            font-size: $size-md;
+        }
+    }
+
+    .imgcardus {
+        height: 400px;
+        width: $size-100;
+    }
+}
+
+.mapa {
+    width: $size-100;
+    margin-top: 20px;
+}
+
+
+//nosotros
+
+@media only screen and (min-width: 720px) and (max-width: 1199px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        height: 15vh;
+
+        .title {
+            width: 25%;
+            margin: 10px;
+
+            .home {
+                font-size: 25px;
+            }
+        }
+
+        .navbar {
+            width: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .user {
+            float: right;
+        }
+
+        .nav {
+            width: 25%;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: $size-sm;
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+
+        .redes {
+            font-size: $size-md;
+        }
+
+        p {
+            font-size: $size-md;
+            text-align: center;
+        }
+    }
+
+    .videocont {
+        height: 50vh;
+        width: 100%;
+
+        .video {
+            padding: 40px;
+            height: $size-100;
+        }
+    }
+
+    .catalogocont {
+        padding: 50px;
+        width: $size-100;
+    }
+
+    .reseña:hover {
+        transform: scale(1.1);
+        filter: grayscale(0%);
+    }
+
+
+    //nosotros
+    .usgeneral{
+        font-size: $size-md;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        height: 15vh;
+
+        .title {
+            width: 25%;
+            margin: 10px;
+
+            .home {
+                font-size: $size-xl;
+            }
+        }
+
+        .navbar {
+            width: 35%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .user {
+            float: right;
+        }
+
+        .nav {
+            width: 25%;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                padding-top: 15px;
+            }
+        }
+    }
+
+
+    .banner {
+        height: $size-100;
+        width: $size-100;
+        background-image: url(../met.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+
+        .redes {
+            font-size: $size-md;
+        }
+
+        p {
+            font-size: $size-xl;
+            text-align: center;
+        }
+    }
+
+    .videocont {
+        height: 70vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .video {
+            padding: 40px;
+            height: $size-100;
+            width: 80%;
+        }
+    }
+
+    .catalogocont {
+        padding: 100px;
+        width: $size-100;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .reseña:hover {
+        filter: grayscale(0%);
+    }
+
+    .imgreseña {
+        height: 500px;
+        width: 500px;
+
+    }
+
+        //nosotros
+        .usgeneral{
+            font-size: $size-md;
+        }
+        .misioncards{
+            flex-direction: row;
+        }
+}

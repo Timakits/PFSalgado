@@ -1,1 +1,359 @@
-/*# sourceMappingURL=styles.css.map */
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #181A1B;
+}
+
+header {
+  height: 20vh;
+  max-width: 100%;
+  background-color: #FA9600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+header .title {
+  width: 100%;
+}
+header .title .home {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+  text-shadow: 0 0 10px black;
+  text-align: center;
+  text-transform: uppercase;
+}
+header .title a {
+  text-decoration: none;
+}
+header .navbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+}
+header .navbar .navbarinput {
+  height: 30px;
+  width: 100%;
+}
+header .navbar .lupa {
+  height: 30px;
+}
+header .userlogo {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .nav {
+  padding: 20px;
+  width: 100%;
+}
+header .nav a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+}
+header .nav a:hover {
+  color: white;
+}
+header .nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.footer {
+  background-color: #E06B00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 30px;
+  font-family: "Arimo", sans-serif;
+  padding: 20px;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.footer a:hover {
+  color: rgb(0, 74, 139);
+}
+.footer p {
+  font-size: 20px;
+  color: white;
+}
+
+.barradiv {
+  height: 10px;
+  background-color: #FA9600;
+}
+
+.catalogocont {
+  overflow: auto;
+  height: 40vh;
+  display: inline-block;
+}
+.catalogocont .reseña {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  filter: grayscale(100%);
+}
+.catalogocont .reseña .reseña:hover {
+  filter: grayscale(0%);
+}
+.catalogocont .reseña p {
+  float: right;
+  font-size: 15px;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+.catalogocont .imgreseña {
+  height: 120px;
+  width: 120px;
+}
+
+.video {
+  width: 100%;
+}
+
+.ubi {
+  width: 100%;
+  height: 120px;
+}
+
+main {
+  height: 50vh;
+  width: 100%;
+  background-image: url(../nostrospng.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: "Bebas Neue", cursive;
+  color: #E06B00;
+  text-shadow: 0 0 5px black;
+}
+
+.usgeneral {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-family: "Arimo", sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+
+.mision {
+  text-align: center;
+  font-size: 100px;
+  font-family: "Bebas Neue", cursive;
+  color: #ED2B0C;
+  background-color: #E06B00;
+  text-shadow: 0 0 5px black;
+}
+
+.misioncards {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border: 2px solid #FA9600;
+  width: 100%;
+}
+.misioncards .cardus {
+  border: 2px solid #FA9600;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.misioncards .cardus p {
+  padding: 10px;
+  font-size: 30px;
+}
+.misioncards .imgcardus {
+  height: 400px;
+  width: 100%;
+}
+
+.mapa {
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1199px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 15vh;
+  }
+  header .title {
+    width: 25%;
+    margin: 10px;
+  }
+  header .title .home {
+    font-size: 25px;
+  }
+  header .navbar {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .user {
+    float: right;
+  }
+  header .nav {
+    width: 25%;
+  }
+  header .nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .footer .redes {
+    font-size: 30px;
+  }
+  .footer p {
+    font-size: 30px;
+    text-align: center;
+  }
+  .videocont {
+    height: 50vh;
+    width: 100%;
+  }
+  .videocont .video {
+    padding: 40px;
+    height: 100%;
+  }
+  .catalogocont {
+    padding: 50px;
+    width: 100%;
+  }
+  .reseña:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+  }
+  .usgeneral {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 15vh;
+  }
+  header .title {
+    width: 25%;
+    margin: 10px;
+  }
+  header .title .home {
+    font-size: 50px;
+  }
+  header .navbar {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .user {
+    float: right;
+  }
+  header .nav {
+    width: 25%;
+  }
+  header .nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding-top: 15px;
+  }
+  .banner {
+    height: 100%;
+    width: 100%;
+    background-image: url(../met.png);
+    background-position: center;
+    background-size: cover;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .footer .redes {
+    font-size: 30px;
+  }
+  .footer p {
+    font-size: 50px;
+    text-align: center;
+  }
+  .videocont {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .videocont .video {
+    padding: 40px;
+    height: 100%;
+    width: 80%;
+  }
+  .catalogocont {
+    padding: 100px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .reseña:hover {
+    filter: grayscale(0%);
+  }
+  .imgreseña {
+    height: 500px;
+    width: 500px;
+  }
+  .usgeneral {
+    font-size: 30px;
+  }
+  .misioncards {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=styles.css.map */
