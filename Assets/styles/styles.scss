@@ -147,6 +147,14 @@ header {
 
 //Index
 
+.banner {
+    height: $size-100;
+    width: $size-100;
+    background-image: url(../met.png);
+    background-position: center;
+    background-size: cover;
+}
+
 .catalogocont {
     overflow: auto;
     height: 40vh;
@@ -264,6 +272,54 @@ main {
 
 //nosotros
 
+//productos
+.imgpr{
+    height: 130px;
+}
+.cardsv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    max-width: $size-100;
+}
+.cardv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid $color4;
+    padding: 20px;
+    p{
+        text-align: center;
+        padding: 10px;
+    }
+    form{
+        padding: 25px;
+        width: $size-100;
+        .buybutton{
+            width: $size-100;
+            height: $size-lg;
+            background-color: blue;
+        }
+        input:hover{
+            background-color: $color1;
+        }
+    }
+}
+.cardsh{
+    padding: 20px;
+}
+.tablacont{
+    padding: 20px;
+    .tabla{
+        display: grid;
+    }
+}
+//productos
+
+
 @media only screen and (min-width: 720px) and (max-width: 1199px) {
     header {
         display: flex;
@@ -306,6 +362,14 @@ main {
         }
     }
 
+    .banner {
+        height: $size-100;
+        width: $size-100;
+        background-image: url(../met.png);
+        background-position: center;
+        background-size: cover;
+    }
+
     .footer {
         display: flex;
         justify-content: space-between;
@@ -344,8 +408,24 @@ main {
 
 
     //nosotros
-    .usgeneral{
+    .usgeneral {
         font-size: $size-md;
+    }
+
+    //productos
+    .cardv{
+        .hform{
+            width: 20%;
+        }
+    }
+    .cardsv{
+        flex-direction: row;
+    }
+    .cardh{
+        flex-direction: row;
+    }
+    .imgpr{
+        height: 140px;
     }
 }
 
@@ -362,7 +442,7 @@ main {
             margin: 10px;
 
             .home {
-                font-size: $size-xl;
+                font-size: 45px;
             }
         }
 
@@ -450,11 +530,43 @@ main {
 
     }
 
-        //nosotros
-        .usgeneral{
-            font-size: $size-md;
+    //nosotros
+    .usgeneral {
+        font-size: $size-md;
+    }
+
+    .misioncards {
+        flex-direction: row;
+    }
+
+    .nosotrosjpg {
+        h1 {
+            font-size: 150px;
         }
-        .misioncards{
+    }
+        //productos
+        .cardv{
+            .hform{
+                width: 20%;
+            }
+        }
+        .cardsv{
             flex-direction: row;
+            margin-top: 50px;
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+        .cardsh{
+
+            justify-content: center;
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+        .cardh{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .imgpr{
+            height: 200px;
         }
 }
