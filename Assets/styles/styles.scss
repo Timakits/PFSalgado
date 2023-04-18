@@ -49,20 +49,43 @@ header {
 
     .title {
         width: $size-100;
+    }
 
-        .home {
-            font-family: $font1;
-            font-size: $size-lg;
-            color: $color6;
-            text-shadow: 0 0 10px black;
-            text-align: center;
-            text-transform: uppercase;
-        }
+    .home {
+        font-family: $font1;
+        font-size: $size-lg;
+        color: $color6;
+        text-shadow: 0 0 10px black;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
 
-        a {
-            text-decoration: none;
+        span {
+            animation-duration: 4s;
+            animation-name: aparecer;
+            animation-iteration-count: infinite;
         }
     }
+
+
+    h2:hover {
+        font-style: italic;
+    }
+
+    @keyframes aparecer {
+        0% {
+            color: white;
+        }
+
+        50% {
+            color: #e5ff00;
+        }
+
+        100% {
+            color: white;
+        }
+    }
+
 
     .navbar {
         display: flex;
@@ -73,6 +96,8 @@ header {
         .navbarinput {
             height: $size-md;
             width: $size-100;
+            border-radius: 20px;
+            font-size: $size-sm;
         }
 
         .lupa {
@@ -94,13 +119,15 @@ header {
 
         a {
             text-decoration: none;
-            color: #000000;
+            color: #ffffff;
             font-family: $font2;
             text-align: center;
         }
 
         a:hover {
-            color: white;
+            color: black;
+            font-style: italic;
+            text-shadow: 0 0 2px black;
         }
 
         ul {
@@ -251,6 +278,7 @@ main {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        font-family: $font3;
 
         p {
             padding: 10px;
@@ -273,10 +301,11 @@ main {
 //nosotros
 
 //productos
-.imgpr{
+.imgpr {
     height: 130px;
 }
-.cardsv{
+
+.cardsv {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -284,41 +313,191 @@ main {
     padding: 20px;
     max-width: $size-100;
 }
-.cardv{
+
+.cardv {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border: 2px solid $color4;
     padding: 20px;
-    p{
+
+    p {
         text-align: center;
         padding: 10px;
     }
-    form{
+
+    form {
         padding: 25px;
         width: $size-100;
-        .buybutton{
+
+        .buybutton {
             width: $size-100;
             height: $size-lg;
             background-color: blue;
         }
-        input:hover{
+
+        input:hover {
             background-color: $color1;
         }
     }
 }
-.cardsh{
+
+.cardsh {
     padding: 20px;
 }
-.tablacont{
+
+.tablacont {
     padding: 20px;
-    .tabla{
+
+    .tabla {
         display: grid;
     }
 }
+
 //productos
 
+//contacto
+.formcontacto {
+    border: 2px solid gray;
+    margin: 10px;
+    padding: 5px;
+
+    .aviso{
+        color: red;
+    }
+    .for {
+        padding: 5px;
+        font-family: $font3;
+        font-size: $size-sm;
+
+        input {
+            height: 30px;
+            width: $size-100;
+            font-size: $size-sm;
+        }
+
+        .newsletter {
+            height: 25px;
+            width: 30%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .submit {
+            background-color: blue;
+        }
+    }
+
+    .newsletter {
+        display: flex;
+        justify-content: center;
+    }
+
+    .comentariocont {
+        height: 30vh;
+
+        .comentario {
+            width: $size-100;
+        }
+
+        textarea {
+            max-width: $size-100;
+            font-size: $size-sm;
+            font-family: $font3;
+            padding: 5px;
+
+        }
+    }
+
+}
+
+.textcontacto {
+    font-family: $font3;
+    border: 2px solid gray;
+    margin: 10px;
+    padding: 20px;
+
+    p {
+        padding: 5px;
+        font-size: $size-sm;
+    }
+
+    .instrucciones {
+        h2 {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: $size-md;
+            width: $size-100;
+            color: $color4;
+        }
+    }
+}
+
+.calendario {
+    max-width: $size-100;
+    padding: 5px;
+}
+
+//contacto
+
+//usuario
+.contenedor {
+    border: 2px solid gray;
+    margin: 15px;
+    padding: 10px;
+
+    .mitad1 {
+        .imgperfil {
+            display: flex;
+            justify-content: center;
+
+            .fotoperfil {
+                width: 280px;
+            }
+        }
+
+        .descripcion {
+            h2 {
+                font-size: $size-md;
+                font-family: $font3;
+                margin: 10px;
+                background-color: $color1;
+                padding: 5px;
+            }
+        }
+
+    }
+
+    .mitad2 {
+        .texto {
+            font-size: $size-sm;
+            font-family: $font3;
+            margin: 10px;
+        }
+
+        .barradeprogreso {
+            text-align: center;
+            margin: 10px;
+            font-family: $font2;
+        }
+
+        .editbutton {
+            display: flex;
+            justify-content: end;
+            margin: 10px;
+            margin-top: 20px;
+
+            .boton {
+                height: $size-md;
+                background-color: #ED2B0C;
+                width: 50px;
+            }
+        }
+    }
+}
+
+//usuario
 
 @media only screen and (min-width: 720px) and (max-width: 1199px) {
     header {
@@ -413,19 +592,71 @@ main {
     }
 
     //productos
-    .cardv{
-        .hform{
+    .cardv {
+        .hform {
             width: 20%;
         }
     }
-    .cardsv{
+
+    .cardsv {
         flex-direction: row;
     }
-    .cardh{
+
+    .cardh {
         flex-direction: row;
     }
-    .imgpr{
+
+    .imgpr {
         height: 140px;
+    }
+
+    //contacto
+    .textcontacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+
+        .sector1 {
+            width: 50%;
+        }
+
+        .sector2 {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .enviar {
+                display: flex;
+                justify-content: center;
+
+                .submit {
+                    width: 60%;
+                }
+            }
+        }
+    }
+
+    .instrucciones {
+        p {
+            padding-top: 20px;
+            font-size: $size-md;
+        }
+    }
+
+    //usuario
+    .mitad1 {
+        display: flex;
+    }
+
+    .mitad2 {
+        display: flex;
     }
 }
 
@@ -544,29 +775,111 @@ main {
             font-size: 150px;
         }
     }
-        //productos
-        .cardv{
-            .hform{
-                width: 20%;
+
+    //productos
+    .cardv {
+        .hform {
+            width: 20%;
+        }
+    }
+
+    .cardsv {
+        flex-direction: row;
+        margin-top: 50px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .cardsh {
+
+        justify-content: center;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .cardh {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .imgpr {
+        height: 200px;
+    }
+
+    //contacto
+    .infocontacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textcontacto {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+
+        .sector1 {
+            width: 50%;
+        }
+
+        .sector2 {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .aviso {
+                p {
+                    font-size: $size-md;
+                }
+            }
+
+            .enviar {
+                display: flex;
+                justify-content: center;
+
+                .submit {
+                    width: 60%;
+                }
             }
         }
-        .cardsv{
-            flex-direction: row;
-            margin-top: 50px;
-            margin-right: 50px;
-            margin-left: 50px;
-        }
-        .cardsh{
+    }
 
-            justify-content: center;
-            margin-right: 50px;
-            margin-left: 50px;
+    .instrucciones {
+        p {
+            padding-top: 20px;
+            font-size: $size-md;
         }
-        .cardh{
-            flex-direction: row;
-            justify-content: space-between;
+    }
+
+    //usuario
+    .contenedor {
+        margin: 20px auto;
+        width: 70%;
+
+        .mitad1 {
+            display: flex;
+
         }
-        .imgpr{
-            height: 200px;
+
+        .mitad2 {
+            .barradeprogreso {
+                margin-top: 40px;
+            }
         }
+    }
+
+    .calendariocont {
+        display: flex;
+        justify-content: center;
+        margin: 15px;
+    }
 }

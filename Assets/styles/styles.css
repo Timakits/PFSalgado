@@ -25,16 +25,33 @@ header {
 header .title {
   width: 100%;
 }
-header .title .home {
+header .home {
   font-family: "Noto Sans", sans-serif;
   font-size: 40px;
   color: #ffffff;
   text-shadow: 0 0 10px black;
   text-align: center;
   text-transform: uppercase;
-}
-header .title a {
   text-decoration: none;
+}
+header .home span {
+  animation-duration: 4s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+header h2:hover {
+  font-style: italic;
+}
+@keyframes aparecer {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #e5ff00;
+  }
+  100% {
+    color: white;
+  }
 }
 header .navbar {
   display: flex;
@@ -45,6 +62,8 @@ header .navbar {
 header .navbar .navbarinput {
   height: 30px;
   width: 100%;
+  border-radius: 20px;
+  font-size: 20px;
 }
 header .navbar .lupa {
   height: 30px;
@@ -62,12 +81,14 @@ header .nav {
 }
 header .nav a {
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
   font-family: "Bebas Neue", cursive;
   text-align: center;
 }
 header .nav a:hover {
-  color: white;
+  color: black;
+  font-style: italic;
+  text-shadow: 0 0 2px black;
 }
 header .nav ul {
   list-style: none;
@@ -195,6 +216,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: "Arimo", sans-serif;
 }
 .misioncards .cardus p {
   padding: 10px;
@@ -257,6 +279,114 @@ main {
 }
 .tablacont .tabla {
   display: grid;
+}
+
+.formcontacto {
+  border: 2px solid gray;
+  margin: 10px;
+  padding: 5px;
+}
+.formcontacto .aviso {
+  color: red;
+}
+.formcontacto .for {
+  padding: 5px;
+  font-family: "Arimo", sans-serif;
+  font-size: 20px;
+}
+.formcontacto .for input {
+  height: 30px;
+  width: 100%;
+  font-size: 20px;
+}
+.formcontacto .for .newsletter {
+  height: 25px;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+.formcontacto .for .submit {
+  background-color: blue;
+}
+.formcontacto .newsletter {
+  display: flex;
+  justify-content: center;
+}
+.formcontacto .comentariocont {
+  height: 30vh;
+}
+.formcontacto .comentariocont .comentario {
+  width: 100%;
+}
+.formcontacto .comentariocont textarea {
+  max-width: 100%;
+  font-size: 20px;
+  font-family: "Arimo", sans-serif;
+  padding: 5px;
+}
+
+.textcontacto {
+  font-family: "Arimo", sans-serif;
+  border: 2px solid gray;
+  margin: 10px;
+  padding: 20px;
+}
+.textcontacto p {
+  padding: 5px;
+  font-size: 20px;
+}
+.textcontacto .instrucciones h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  width: 100%;
+  color: #ED2B0C;
+}
+
+.calendario {
+  max-width: 100%;
+  padding: 5px;
+}
+
+.contenedor {
+  border: 2px solid gray;
+  margin: 15px;
+  padding: 10px;
+}
+.contenedor .mitad1 .imgperfil {
+  display: flex;
+  justify-content: center;
+}
+.contenedor .mitad1 .imgperfil .fotoperfil {
+  width: 280px;
+}
+.contenedor .mitad1 .descripcion h2 {
+  font-size: 30px;
+  font-family: "Arimo", sans-serif;
+  margin: 10px;
+  background-color: #FA9600;
+  padding: 5px;
+}
+.contenedor .mitad2 .texto {
+  font-size: 20px;
+  font-family: "Arimo", sans-serif;
+  margin: 10px;
+}
+.contenedor .mitad2 .barradeprogreso {
+  text-align: center;
+  margin: 10px;
+  font-family: "Bebas Neue", cursive;
+}
+.contenedor .mitad2 .editbutton {
+  display: flex;
+  justify-content: end;
+  margin: 10px;
+  margin-top: 20px;
+}
+.contenedor .mitad2 .editbutton .boton {
+  height: 30px;
+  background-color: #ED2B0C;
+  width: 50px;
 }
 
 @media only screen and (min-width: 720px) and (max-width: 1199px) {
@@ -343,6 +473,42 @@ main {
   }
   .imgpr {
     height: 140px;
+  }
+  .textcontacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+  }
+  form .sector1 {
+    width: 50%;
+  }
+  form .sector2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  form .sector2 .enviar {
+    display: flex;
+    justify-content: center;
+  }
+  form .sector2 .enviar .submit {
+    width: 60%;
+  }
+  .instrucciones p {
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  .mitad1 {
+    display: flex;
+  }
+  .mitad2 {
+    display: flex;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -455,5 +621,60 @@ main {
   }
   .imgpr {
     height: 200px;
+  }
+  .infocontacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .textcontacto {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+  }
+  form .sector1 {
+    width: 50%;
+  }
+  form .sector2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  form .sector2 .aviso p {
+    font-size: 30px;
+  }
+  form .sector2 .enviar {
+    display: flex;
+    justify-content: center;
+  }
+  form .sector2 .enviar .submit {
+    width: 60%;
+  }
+  .instrucciones p {
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  .contenedor {
+    margin: 20px auto;
+    width: 70%;
+  }
+  .contenedor .mitad1 {
+    display: flex;
+  }
+  .contenedor .mitad2 .barradeprogreso {
+    margin-top: 40px;
+  }
+  .calendariocont {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
   }
 }/*# sourceMappingURL=styles.css.map */

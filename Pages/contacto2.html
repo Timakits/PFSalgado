@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../Assets/Favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../Assets/styles/styles.css">
-    <title>Contacto</title>
+    <title>Contacta con MetAuric</title>
 </head>
+
 <body>
     <header>
         <div class="title">
@@ -33,49 +35,62 @@
         </div>
         <div class="nav">
             <ul>
-                <li><a href="./Pages/Productos2.html">Productos</a></li>
-                <li><a href="./Pages/nosotros2.html">Nosotros</a></li>
-                <li><a href="./Pages/Perfil.html">Usuario</a></li>
+                <li><a href="../Pages/Productos2.html">Productos</a></li>
+                <li><a href="../Pages/nosotros2.html">Nosotros</a></li>
+                <li><a href="../Pages/Perfil.html">Usuario</a></li>
             </ul>
         </div>
     </header>
-
-    <section class="formcontacto textcontacto">
-        <form>
-            <div class="nombre">
-                <label for="Nombre y apellido"></label>
-                <input type="text" placeholder="Nombre y apellido">
+    <section class="infocontacto">
+        <section class="formcontacto textcontacto ">
+            <form>
+                <div class="sector1">
+                    <div class="nombre for">
+                        <label for="Nombre y apellido"></label>
+                        <input type="text" placeholder="Nombre y apellido">
+                    </div>
+                    <div class="gmail for">
+                        <label for="Gmail"></label>
+                        <input type="text" placeholder="@Email">
+                    </div>
+                    <div class="comentariocont for">
+                        <label for="comentario"></label>
+                        <textarea name="comentario" id="" cols="30" rows="10" placeholder="comentario"
+                            class="comentario"></textarea>
+                    </div>
+                    <div class="newsletter for">
+                        <label for="newsletter">¿Desea recibir el newsletter?</label>
+                        <input type="checkbox" class="newsletter">
+                    </div>
+                </div>
+                <div class="sector2">
+                    <div class="aviso for">
+                        <p>Para poder enviar el formulario de debera completar todos los campos</p>
+                    </div>
+                    <div class="enviar for">
+                        <label for="enviar"></label>
+                        <input type="submit" value="Enviar formulario" class="submit">
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section class="textcontacto">
+            <p>Los dias disponibles del calendario son para llamadas 
+            </p>
+            <div class="calendario">
+                <iframe
+                    src="https://calendar.google.com/calendar/embed?src=43ee48fd9a89d6349e4fb856da3322cf3a8aac9e25071f388316c871e2b2f84b%40group.calendar.google.com&ctz=America%2FArgentina%2FBuenos_Aires"
+                    style="border: 0" width="800" height="600" frameborder="0" scrolling="no"
+                    class="calendario"></iframe>
             </div>
-            <div class="gmail">
-                <label for="Gmail"></label>
-                <input type="text" placeholder="Gmail">
+        </section>
+        <section class="textcontacto">
+            <div class="instrucciones">
+                <h2>Guia para comunicarse</h2>
+                <p>Para pode comunicarse debera completar el formulario que se encuentra a principio de pagina. En caso de ser especial por favor enviar un correo a este email (...) con el asunto de |Especial|
+                </p>
             </div>
-            <div class="newsletter">
-                <label for="newsletter">¿Desea recibir el newsletter?</label>
-                <input type="checkbox">
-            </div>
-            <div class="comentario">
-                <label for="comentario"></label>
-                <input type="text" placeholder="comentario">
-            </div>
-            <div class="aviso">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit eum corporis eaque cum tempore, vel omnis perspiciatis doloribus laboriosam ducimus!</p>
-            </div>
-            <div class="enviar">
-                <label for="enviar"></label>
-                <input type="submit" value="Enviar formulario">
-            </div>
-        </form>
-    </section>
-    <section class="textcontacto">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, repellat nihil veritatis velit ipsa harum commodi id hic repellendus, at nulla? Voluptas delectus, explicabo ratione amet cumque ab repellat quisquam.</p>
-        <div class="calendario"></div>
-    </section>
-    <section class="textcontacto">
-        <div class="instrucciones">
-            <h2>Guia para comunicarse</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, molestias repudiandae iure inventore harum numquam vitae minus ut quia eaque unde iusto at adipisci amet. Culpa animi consequuntur sint id.</p>
-        </div>
+        </section>
     </section>
     <footer>
         <div class="footer">
@@ -96,4 +111,5 @@
         </div>
     </footer>
 </body>
+
 </html>
