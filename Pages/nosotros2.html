@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../Assets/Favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../Assets/styles/styles.css">
     <title>Nosotros somos MetAuric</title>
 </head>
@@ -47,15 +48,15 @@
     </div>
     <h2 class="mision">Mision</h2>
     <section class="misioncards">
-        <div class="cardus">
+        <div data-aos="flip-left" data-aos-delay="200" data-aos-duration="500" class="cardus">
             <p>Desarrollar compromiso y cooperacion entre las personas para un mejor desarrollo social  </p>
             <img src="../Assets/card1.jpg" alt="men" class="imgcardus 1">
         </div>
-        <div class="cardus">
+        <div data-aos="flip-up" data-aos-delay="200" class="cardus">
             <p>Crear una estructura con ideales y valores nobles para las personas</p>
             <img src="../Assets/card2.jpg" alt="building" class="imgcardus 2">
         </div>
-        <div class="cardus">
+        <div data-aos="flip-right" data-aos-delay="200"class="cardus">
             <p>Que las personas puedan aprovechar y disfrutar tiempo que evitaron perder  </p>
             <img src="../Assets/card3.jpg" alt="family" class="imgcardus 3">
         </div>
@@ -66,7 +67,9 @@
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
     </div>
-    <div class="barradivisora"></div>
+    <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fa9600" fill-opacity="1" d="M0,128L60,133.3C120,139,240,149,360,149.3C480,149,600,139,720,154.7C840,171,960,213,1080,197.3C1200,181,1320,107,1380,69.3L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z" style="--darkreader-inline-fill:#c87800;" data-darkreader-inline-fill=""></path></svg>
+    </div>
     <footer>
         <div class="footer">
             <div class="redes">
@@ -85,6 +88,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

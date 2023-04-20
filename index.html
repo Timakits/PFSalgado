@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./Assets/styles/styles.css">
     <title>METAURIC | Guia profesional de auricualres |</title>
 </head>
@@ -59,29 +60,31 @@
     <div class="barradiv"></div>
     <section>
         <div class="catalogocont">
-            <div class="reseña re1">
+            <div data-aos="fade-right" class="reseña re1">
                 <img src="./Assets/33561_1.jpeg" alt="33561_1" class="imgreseña">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias ab pariatur repellendus, quos
                     voluptates voluptatibus.</p>
             </div>
-            <div class="reseña re2">
+            <div data-aos="fade-left" class="reseña re2">
                 <img src="./Assets/auricular-inalambrico-logitech_41392_1.jpeg" alt="33561_1" class="imgreseña">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolore nam repudiandae
                     consequuntur consequatur nihil.</p>
             </div>
-            <div class="reseña re3">
+            <div data-aos="fade-right" class="reseña re3">
                 <img src="./Assets/concepto-3847371.png" alt="33561_1" class="imgreseña">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde eligendi, laudantium inventore cumque
                     voluptatem eaque?</p>
             </div>
-            <div class="reseña re4">
+            <div data-aos="fade-left" class="reseña re4">
                 <img src="./Assets/concepto-4514174.jpg" alt="33561_1" class="imgreseña">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium error deserunt accusamus
                     provident doloribus necessitatibus?</p>
             </div>
         </div>
     </section>
-    <div class="barradiv"></div>
+    <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fa9600" fill-opacity="1" d="M0,128L60,133.3C120,139,240,149,360,149.3C480,149,600,139,720,154.7C840,171,960,213,1080,197.3C1200,181,1320,107,1380,69.3L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z" style="--darkreader-inline-fill:#c87800;" data-darkreader-inline-fill=""></path></svg>
+    </div>
 
     <footer>
         <div class="footer">
@@ -101,6 +104,13 @@
             </div>
         </div>
     </footer>
+    <div class="subir">
+        
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

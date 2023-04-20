@@ -98,7 +98,7 @@ header .nav ul {
 }
 
 .footer {
-  background-color: #E06B00;
+  background-color: #FA9600;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,6 +125,10 @@ header .nav ul {
   background-color: #FA9600;
 }
 
+.bannercont {
+  line-height: 0;
+}
+
 .banner {
   height: 100%;
   width: 100%;
@@ -137,12 +141,16 @@ header .nav ul {
   overflow: auto;
   height: 40vh;
   display: inline-block;
+  max-width: 100%;
 }
 .catalogocont .reseña {
   display: flex;
   padding: 5px;
   align-items: center;
   filter: grayscale(100%);
+  border: 2px solid #333;
+  margin-top: 20px;
+  max-width: 100%;
 }
 .catalogocont .reseña .reseña:hover {
   filter: grayscale(0%);
@@ -166,6 +174,10 @@ header .nav ul {
 .ubi {
   width: 100%;
   height: 120px;
+}
+
+.wave {
+  line-height: 0;
 }
 
 main {
@@ -198,7 +210,7 @@ main {
   font-size: 100px;
   font-family: "Bebas Neue", cursive;
   color: #ED2B0C;
-  background-color: #E06B00;
+  background-color: #FA9600;
   text-shadow: 0 0 5px black;
 }
 
@@ -250,7 +262,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 2px solid #ED2B0C;
+  border: 2px solid #333;
   padding: 20px;
 }
 .cardv p {
@@ -455,7 +467,7 @@ main {
     padding: 50px;
     width: 100%;
   }
-  .reseña:hover {
+  .catalogocont .reseña:hover {
     transform: scale(1.1);
     filter: grayscale(0%);
   }
@@ -510,6 +522,11 @@ main {
   .mitad2 {
     display: flex;
   }
+  .calendariocont {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+  }
 }
 @media only screen and (min-width: 1200px) {
   header {
@@ -517,7 +534,7 @@ main {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    height: 15vh;
+    height: 18vh;
   }
   header .title {
     width: 25%;
@@ -580,17 +597,30 @@ main {
   .catalogocont {
     padding: 100px;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
-  .reseña:hover {
+  .catalogocont .reseña {
+    height: 50%;
+    width: 60%;
+  }
+  .catalogocont .reseña p {
+    font-size: 30px;
+  }
+  .catalogocont .reseña:hover {
     filter: grayscale(0%);
   }
-  .imgreseña {
-    height: 500px;
+  .catalogocont .imgreseña {
+    height: 200px;
     width: 500px;
+  }
+  .catalogocont .re2 {
+    margin-left: 500px;
+  }
+  .catalogocont .re4 {
+    margin-left: 500px;
   }
   .usgeneral {
     font-size: 30px;
@@ -606,9 +636,10 @@ main {
   }
   .cardsv {
     flex-direction: row;
+    justify-content: center;
     margin-top: 50px;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-left: 190px;
+    width: 80%;
   }
   .cardsh {
     justify-content: center;
