@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +14,7 @@ body {
 }
 
 header {
-  height: 20vh;
+  height: 25vh;
   max-width: 100%;
   background-color: #FA9600;
   display: flex;
@@ -26,7 +27,7 @@ header .title {
   width: 100%;
 }
 header .home {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Bebas Neue", cursive;
   font-size: 40px;
   color: #ffffff;
   text-shadow: 0 0 10px black;
@@ -120,6 +121,28 @@ header .nav ul {
   color: white;
 }
 
+.subir1 {
+  height: 40px;
+  width: 40px;
+  background-color: #ED2B0C;
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  line-height: 40px;
+  border: 2px solid #E06B00;
+  color: #ffffff;
+  font-size: 30px;
+}
+.subir1 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.subir1:hover {
+  transform: translate(0px, -5px);
+}
+
 .barradiv {
   height: 10px;
   background-color: #FA9600;
@@ -151,6 +174,7 @@ header .nav ul {
   border: 2px solid #333;
   margin-top: 20px;
   max-width: 100%;
+  font-family: "Rubik", sans-serif;
 }
 .catalogocont .reseña .reseña:hover {
   filter: grayscale(0%);
@@ -174,6 +198,17 @@ header .nav ul {
 .ubi {
   width: 100%;
   height: 120px;
+}
+
+.carouselimg {
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.carouselimg .imgcarousel {
+  height: 100px;
+  width: 150px;
+  margin-left: 10px;
 }
 
 .wave {
@@ -262,12 +297,15 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 2px solid #333;
+  border: 2px solid #FA9600;
   padding: 20px;
+  font-family: "Rubik", sans-serif;
+  background-color: #181A1B;
 }
 .cardv p {
   text-align: center;
   padding: 10px;
+  color: #ffffff;
 }
 .cardv form {
   padding: 25px;
@@ -414,7 +452,7 @@ main {
     margin: 10px;
   }
   header .title .home {
-    font-size: 25px;
+    font-size: 40px;
   }
   header .navbar {
     width: 45%;
@@ -470,6 +508,14 @@ main {
   .catalogocont .reseña:hover {
     transform: scale(1.1);
     filter: grayscale(0%);
+  }
+  .carouselimg {
+    height: auto;
+  }
+  .carouselimg .imgcarousel {
+    height: 150px;
+    width: 175px;
+    margin-left: 10px;
   }
   .usgeneral {
     font-size: 30px;
@@ -541,7 +587,7 @@ main {
     margin: 10px;
   }
   header .title .home {
-    font-size: 45px;
+    font-size: 70px;
   }
   header .navbar {
     width: 35%;
@@ -622,6 +668,14 @@ main {
   .catalogocont .re4 {
     margin-left: 500px;
   }
+  .carouselimg {
+    height: auto;
+  }
+  .carouselimg .imgcarousel {
+    height: 300px;
+    width: 350px;
+    margin-left: 10px;
+  }
   .usgeneral {
     font-size: 30px;
   }
@@ -681,6 +735,7 @@ main {
   }
   form .sector2 .aviso p {
     font-size: 30px;
+    margin-left: 20px;
   }
   form .sector2 .enviar {
     display: flex;

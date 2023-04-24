@@ -7,11 +7,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 //fonts
 $font1: 'Noto Sans', sans-serif;
 $font2: 'Bebas Neue', cursive;
 $font3: 'Arimo', sans-serif;
+$font4: 'Rubik', sans-serif;
 
 
 //paleta de colores
@@ -37,7 +39,7 @@ body {
 }
 
 header {
-    height: 20vh;
+    height: 25vh;
     max-width: 100%;
     background-color: $color1;
     display: flex;
@@ -52,7 +54,7 @@ header {
     }
 
     .home {
-        font-family: $font1;
+        font-family: $font2;
         font-size: $size-lg;
         color: $color6;
         text-shadow: 0 0 10px black;
@@ -166,6 +168,27 @@ header {
     }
 }
 
+.subir1{
+    height: 40px;
+    width: 40px;
+    background-color: $color4;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    line-height: 40px;
+    border: 2px solid $color2;
+    color: $color6;
+    font-size: $size-md;
+    a{
+        text-decoration: none;
+        color: $color6;
+    }
+}
+.subir1:hover{
+    transform: translate(0px, -5px);
+}
+
 .barradiv {
     height: 10px;
     background-color: $color1;
@@ -199,6 +222,7 @@ header {
         border: 2px solid #333;
         margin-top: 20px;
         max-width: $size-100;
+        font-family: $font4;
 
 
         .reseña:hover {
@@ -228,7 +252,16 @@ header {
     width: $size-100;
     height: 120px;
 }
-
+.carouselimg{
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+.imgcarousel{
+    height: 100px;
+    width: 150px;
+    margin-left: 10px;
+}
+}
 .wave {
     line-height: 0;
 }
@@ -331,12 +364,15 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 2px solid #333;
+    border: 2px solid $color1;
     padding: 20px;
+    font-family: $font4;
+    background-color: #181A1B;
 
     p {
         text-align: center;
         padding: 10px;
+        color: $color6;
     }
 
     form {
@@ -525,7 +561,7 @@ main {
             margin: 10px;
 
             .home {
-                font-size: 25px;
+                font-size: 40px;
             }
         }
 
@@ -598,7 +634,15 @@ main {
         filter: grayscale(0%);
     }
     }
-
+    //index
+    .carouselimg{
+        height: auto;
+    .imgcarousel{
+        height: 150px;
+        width: 175px;
+        margin-left: 10px;
+    }
+    }
     //nosotros
     .usgeneral {
         font-size: $size-md;
@@ -692,7 +736,7 @@ main {
             margin: 10px;
 
             .home {
-                font-size: 45px;
+                font-size: 70px;
             }
         }
 
@@ -794,7 +838,14 @@ main {
             margin-left: 500px;
         }
     }
-
+    .carouselimg{
+        height: auto;
+    .imgcarousel{
+        height: 300px;
+        width: 350px;
+        margin-left: 10px;
+    }
+    }
     //nosotros
     .usgeneral {
         font-size: $size-md;
@@ -875,6 +926,7 @@ main {
             .aviso {
                 p {
                     font-size: $size-md;
+                    margin-left: 20px;
                 }
             }
 
